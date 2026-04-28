@@ -1,0 +1,138 @@
+* {
+    color: white;
+    
+}
+
+body {
+    background-color: rgb(51, 51, 51);
+    margin: 0px;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(51, 51, 51);
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+a {
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+}
+
+#liens {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+#bandeau {
+    background: linear-gradient(to bottom right, darkblue, cyan);
+    height: 1000px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+#photoProfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#etudiant {
+    color: lightblue;
+}
+
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 10px;
+    color: white;
+    border: solid;
+    width: 100px;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.356);
+    cursor: pointer;
+}
+
+#aPropos p {
+    font-size: 20px;
+    width: 50%;
+    align-self: center;
+}
+
+#projets, #aPropos, #contact {
+    padding: 20px;
+}
+
+#projets, #contact {
+    background-color: rgb(43, 43, 43);
+}
+
+#listeProjets {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.projet {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 25%;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+}
+
+.projet .headerProjet{
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.projet .contenuProjet {
+    padding: 15px;
+}
+
+#langages {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.langage {
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+    font-weight: bold;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
