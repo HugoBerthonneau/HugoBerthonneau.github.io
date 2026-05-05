@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
 * {
     color: white;
-    
+    font-family: 'Inconsolata', sans-serif;
 }
 
 body {
     background-color: rgb(51, 51, 51);
     margin: 0px;
+    overflow-x: hidden;
 }
 
 nav {
@@ -75,17 +78,17 @@ a:hover {
     cursor: pointer;
 }
 
-#aPropos p, #enjeux, #bilan {
+#aPropos p, .description, #bilan {
     font-size: 20px;
     width: 50%;
     align-self: center;
 }
 
-#projets, #aPropos, #contact {
+#projets, #aPropos, #contact, #experience {
     padding: 20px;
 }
 
-#projets, #contact, #enjeux, #bilan{
+#projets, #contact, .description, #bilan{
     background-color: rgb(43, 43, 43);
 }
 
@@ -108,6 +111,7 @@ a:hover {
     text-align: center;
     padding: 30px;
     font-size: 30px;
+    background: linear-gradient(to top right, darkblue, cyan);
 }
 
 .projet .contenuProjet {
@@ -138,9 +142,9 @@ a:hover {
     
 }
 
-#enjeux, .pages, #bilan {
-        padding: 20px;
-        width: 100%;
+.pages, #bilan {
+    padding: 20px;
+    width: 100%;
 }
 
 .pages {
@@ -148,7 +152,6 @@ a:hover {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 12px;
-
 }
 
 .pages img:first-child {
@@ -163,4 +166,44 @@ a:hover {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+.description {
+    display: flex;
+    width: 100%;
+}
+
+.contexte {
+    width: 150%;
+    padding: 20px;
+}
+
+.competences {
+    width: 100%;
+    padding: 20px;
+}
+
+.competences div {
+    margin: 30px;
+    font-size: 17px;
+}
+
+.competence {
+    
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    width: 50px;
+    margin: 15px;
+    flex-wrap: wrap;
+    border: solid white;
+}
+
+.vr {
+    border: solid grey;
+    width: -2px;
+    border-width: 1px;
+    margin: 15px;
 }
