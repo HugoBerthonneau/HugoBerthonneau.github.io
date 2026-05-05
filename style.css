@@ -88,6 +88,10 @@ a:hover {
     padding: 20px;
 }
 
+#aPropos {
+    display: flex;
+}
+
 #projets, #contact, .description, #bilan{
     background-color: rgb(43, 43, 43);
 }
